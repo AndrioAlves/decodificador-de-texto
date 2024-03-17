@@ -112,7 +112,7 @@ function botaoDescriptografar() {
     botaoCopiar.querySelector('img').src = 'assets/copiariconeGreen.png';
 
     // Revertendo a imagem de fundo
-    document.body.style.backgroundImage = 'url("/assets/matrixGreen.gif")';
+    document.body.style.backgroundImage = 'url("./assets/matrixGreen.gif")';
 
     // Reverte a cor da frase "Decodificador Matrix"
     document.querySelector(".cabecalho1").style.color = "rgba(51, 255, 0, 0.602)";
