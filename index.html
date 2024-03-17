@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #040204; background-image:url('/assets/matrixGreen.gif');">
+    <header class="cabecalho">
+        <h1 class="cabecalho1" style="color: rgba(51, 255, 0, 0.602);"><b>Decodificador Matrix!</b></h1>
+    </header>
+    <main class="apresentacao">
+        <section class="caixa">
+            <textarea class="caixa__texto" style="color: white; height: 200px; width: 400px;" placeholder="digite aqui..."></textarea>
+            <div class="aviso">
+                <img src="./assets/!.png" height="20px" class="imagem-alerta" alt="! icon">
+                <label style="color: grey;">Apenas letras minusculas e sem acento</label>
+            </div>
+            <div class="botoes">
+                <button class="botao__criptografar" onclick="botaoCriptografar()">
+                    Criptografar
+                </button>
+                <button class="botao__descriptografar" onclick="botaoDescriptografar()">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="mensagem">
+                <textarea class="caixa__mensagem" style="color: white; height: 200px; width: 400px;" readonly></textarea>
+                <button class="botao__copiar" id="botaoCopiar" onclick="execCopy()">
+                    <img src="assets/copiariconeGreen.png" alt="copiar" width="22px">
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

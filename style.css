@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+body {
+    font-family: 'Share Tech', sans-serif;
+    box-sizing: border-box;
+    background-color: #040204;
+    background-image: url('/assets/matrixGreen.gif');
+}
+
+/* Estilo para resoluções maiores que 1200x1121 */
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixa__texto, .caixa__mensagem {
+        width: calc(100% - 40px); /* Ajuste para o tamanho da tela */
+        margin-right: 0;
+        margin-bottom: 20px; /* Espaçamento entre a caixa de texto/mensagem e o botão */
+    }
+
+    .botoes {
+        flex-direction: column; /* Altera a direção dos botões para empilhá-los verticalmente */
+    }
+
+    .botao__copiar {
+        position: relative; /* Altera para posição relativa */
+        margin-top: 20px; /* Espaçamento entre os botões */
+    }
+}
+
+.caixa__texto, .caixa__mensagem,
+.botao__criptografar, .botao__descriptografar {
+    font-family: 'Share Tech', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho1 {
+    background-color: #040204;
+    font-size: 40px;
+}
+
+.apresentacao {
+    padding: 8%;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa__texto, .caixa__mensagem {
+    background-color: #040204;
+    border: 8px solid #046e04;
+    border-radius: 20px;
+    box-sizing: content-box;
+    font-size: 30px;
+    outline: none;
+    height: 200px;
+    width: 400px;
+    resize: none;
+}
+
+.aviso {
+    padding: 2%;
+    background-color: #040204;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.botoes {
+    display: flex;
+    padding: 5%;
+    gap: 15px;
+}
+
+.botao__criptografar, .botao__descriptografar {
+    background-color: #040204;
+    border: 5px solid #046e04;
+    border-radius: 8px;
+    color: white;
+    width: 180px;
+    height: 70px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.botao__criptografar:hover, .botao__descriptografar:hover{
+    background-color: #272626;
+    border: 5px solid #1bff1b;
+    border-radius: 8px;
+    color: white;
+    width: 180px;
+    height: 70px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.caixa__mensagem {
+    resize: none;
+}
+
+.botao__copiar {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    left: 1210px;
+    top: 408px;
+    display: none;
+}
+
+
+
+/* Estilo para resoluções maiores que 1200x1121 */
+@media (max-width: 1200px) {
+    .botao__copiar {
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-top: 20px;
+    }
+}
+
+.vazia ~ .botao__copiar {
+    display: none;
+}
