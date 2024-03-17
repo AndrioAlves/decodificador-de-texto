@@ -4,7 +4,7 @@ body {
     font-family: 'Share Tech', sans-serif;
     box-sizing: border-box;
     background-color: #040204;
-    background-image: url('./assets/matrixGreen.gif');
+    background-image: url('/assets/matrixGreen.gif');
 }
 
 /* Estilo para resoluções maiores que 1200x1121 */
